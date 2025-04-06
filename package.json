@@ -1,0 +1,34 @@
+{
+  "name": "dailang",
+  "displayName": "dailang",
+  "description": "dai language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "dailang",
+        "aliases": [
+          "dailang",
+          "dailang"
+        ],
+        "extensions": [
+          ".dai"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dailang",
+        "scopeName": "source.dailang",
+        "path": "./syntaxes/dailang.tmLanguage.json"
+      }
+    ]
+  }
+}
