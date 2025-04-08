@@ -12,7 +12,7 @@
 		},
 		{
 			"comment": "Built-in function class module",
-			"match": "\\b(print|len|type|assert|assert_eq|range|abs|import|Path|os|time|math)\\b(?=\\()",
+			"match": "\\b(print|len|type|assert|assert_eq|range|abs|import|Path|os|time|math|canvas)\\b(?=\\()",
 			"name": "support.function.builtin.dailang"
 		},
 		{
@@ -27,6 +27,9 @@
 		{
 			"comment": "数字",
 			"include": "#numeric_literals"
+		},
+		{
+			"include": "#identifier"
 		},
 		{
 			"comment": "Terminators",
@@ -139,7 +142,7 @@
 			"patterns": [
 				{
 					"comment": "Flow control keywords",
-					"match": "\\b(break|continue|else|for|if|while|return|in)\\b",
+					"match": "\\b(break|continue|else|for|if|elif|while|return|in)\\b",
 					"name": "keyword.control.dailang"
 				},
 				{
@@ -157,6 +160,10 @@
 				{
 					"match": "\\bclass\\b",
 					"name": "keyword.class.dailang"
+				},
+				{
+					"match": "\\bself\\b",
+					"name": "keyword.self.dailang"
 				},
 				{
 					"match": "\\b(not|and|or)\\b",
@@ -366,14 +373,6 @@
 		},
 		"identifier": {
 			"patterns": [
-				{
-					"name": "variable.language.special.self.dailang",
-					"match": "\\b(self)\\b"
-				},
-				{
-					"name": "variable.language.special.class.dailang",
-					"match": "\\b(class)\\b"
-				},
 				{
 					"name": "variable.other.dailang",
 					"match": "\\w+\\d*"
