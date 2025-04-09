@@ -2,7 +2,7 @@
   "name": "dailang",
   "displayName": "dailang",
   "description": "dai language support",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ljhua",
   "engines": {
     "vscode": "^1.99.0"
